@@ -105,7 +105,7 @@ def test_calcular_totales_por_producto():
     # Verificar los totales
     # Laptop: 2*800 + 1*800 = 2400
     total_laptop = resultado[resultado['Producto'] == 'Laptop']['Total Ventas'].iloc[0]
-    assert total_laptop == 9999, f"Laptop debería ser 2400, pero es {total_laptop}"
+    assert total_laptop == 2400, f"Laptop debería ser 2400, pero es {total_laptop}"
     
     # Mouse: 10*15 + 5*15 = 225
     total_mouse = resultado[resultado['Producto'] == 'Mouse']['Total Ventas'].iloc[0]
